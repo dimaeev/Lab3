@@ -20,6 +20,8 @@ int main() {
     
     double times[] = {0.0, 0.25, 0.75, 1.0, 2.0, 3.0, 4.0, 5.0} ;
     
+    cout << fixed << setprecision(3) ;
+    
     for (double t : times) {
         double v = rt1 * tanh(rt2 * t);
         cout << "Время: " << t << ", Скорость: " << v << endl ;
